@@ -1,0 +1,1400 @@
+openapi: 3.0.2
+info:
+  title: ''
+  version: ''
+paths:
+  /accounts/api/aereo/:
+    get:
+      operationId: listAereos
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Aereo'
+          description: ''
+      tags:
+      - accounts
+    post:
+      operationId: createAereo
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Aereo'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Aereo'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Aereo'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Aereo'
+          description: ''
+      tags:
+      - accounts
+  /accounts/api/aereo/{id}/:
+    get:
+      operationId: retrieveAereo
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Aereo.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Aereo'
+          description: ''
+      tags:
+      - accounts
+    put:
+      operationId: updateAereo
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Aereo.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Aereo'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Aereo'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Aereo'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Aereo'
+          description: ''
+      tags:
+      - accounts
+    patch:
+      operationId: partialUpdateAereo
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Aereo.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Aereo'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Aereo'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Aereo'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Aereo'
+          description: ''
+      tags:
+      - accounts
+    delete:
+      operationId: destroyAereo
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Aereo.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - accounts
+  /accounts/api/pilota/:
+    get:
+      operationId: listPilotas
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Pilota'
+          description: ''
+      tags:
+      - accounts
+    post:
+      operationId: createPilota
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Pilota'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Pilota'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Pilota'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pilota'
+          description: ''
+      tags:
+      - accounts
+  /accounts/api/pilota/{id}/:
+    get:
+      operationId: retrievePilota
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Pilota.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pilota'
+          description: ''
+      tags:
+      - accounts
+    put:
+      operationId: updatePilota
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Pilota.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Pilota'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Pilota'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Pilota'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pilota'
+          description: ''
+      tags:
+      - accounts
+    patch:
+      operationId: partialUpdatePilota
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Pilota.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Pilota'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Pilota'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Pilota'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pilota'
+          description: ''
+      tags:
+      - accounts
+    delete:
+      operationId: destroyPilota
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Pilota.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - accounts
+  /accounts/api/token/:
+    get:
+      operationId: listControlla_Tokens
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {}
+          description: ''
+      tags:
+      - accounts
+  /logbook/api/decolli/:
+    get:
+      operationId: listDecollos
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Decollo'
+          description: ''
+      tags:
+      - logbook
+    post:
+      operationId: createDecollo
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Decollo'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Decollo'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Decollo'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Decollo'
+          description: ''
+      tags:
+      - logbook
+  /logbook/api/decolli/{id}/:
+    get:
+      operationId: retrieveDecollo
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Decollo.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Decollo'
+          description: ''
+      tags:
+      - logbook
+    put:
+      operationId: updateDecollo
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Decollo.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Decollo'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Decollo'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Decollo'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Decollo'
+          description: ''
+      tags:
+      - logbook
+    patch:
+      operationId: partialUpdateDecollo
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Decollo.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Decollo'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Decollo'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Decollo'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Decollo'
+          description: ''
+      tags:
+      - logbook
+    delete:
+      operationId: destroyDecollo
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Decollo.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - logbook
+  /logbook/api/atterraggi/:
+    get:
+      operationId: listAtterraggios
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Atterraggio'
+          description: ''
+      tags:
+      - logbook
+    post:
+      operationId: createAtterraggio
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Atterraggio'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Atterraggio'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Atterraggio'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Atterraggio'
+          description: ''
+      tags:
+      - logbook
+  /logbook/api/atterraggi/{id}/:
+    get:
+      operationId: retrieveAtterraggio
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Atterraggio.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Atterraggio'
+          description: ''
+      tags:
+      - logbook
+    put:
+      operationId: updateAtterraggio
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Atterraggio.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Atterraggio'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Atterraggio'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Atterraggio'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Atterraggio'
+          description: ''
+      tags:
+      - logbook
+    patch:
+      operationId: partialUpdateAtterraggio
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Atterraggio.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Atterraggio'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Atterraggio'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Atterraggio'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Atterraggio'
+          description: ''
+      tags:
+      - logbook
+    delete:
+      operationId: destroyAtterraggio
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Atterraggio.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - logbook
+  /logbook/api/voli/:
+    get:
+      operationId: listVolos
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Volo'
+          description: ''
+      tags:
+      - logbook
+    post:
+      operationId: createVolo
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Volo'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Volo'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Volo'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Volo'
+          description: ''
+      tags:
+      - logbook
+  /logbook/api/voli/{id}/:
+    get:
+      operationId: retrieveVolo
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Volo.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Volo'
+          description: ''
+      tags:
+      - logbook
+    put:
+      operationId: updateVolo
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Volo.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Volo'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Volo'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Volo'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Volo'
+          description: ''
+      tags:
+      - logbook
+    patch:
+      operationId: partialUpdateVolo
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Volo.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Volo'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Volo'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Volo'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Volo'
+          description: ''
+      tags:
+      - logbook
+    delete:
+      operationId: destroyVolo
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Volo.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - logbook
+  /logbook/api/last/{uicd}/:
+    get:
+      operationId: retrieveLastByUicd
+      description: ''
+      parameters:
+      - name: uicd
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - logbook
+  /api/rest-auth/logout/:
+    get:
+      operationId: listLogouts
+      description: 'Calls Django logout method and delete the Token object
+
+        assigned to the current User object.
+
+
+        Accepts/Returns nothing.'
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {}
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createLogout
+      description: 'Calls Django logout method and delete the Token object
+
+        assigned to the current User object.
+
+
+        Accepts/Returns nothing.'
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - api
+  /api/rest-auth/user/:
+    get:
+      operationId: retrieveUserDetails
+      description: 'Reads and updates UserModel fields
+
+        Accepts GET, PUT, PATCH methods.
+
+
+        Default accepted fields: username, first_name, last_name
+
+        Default display fields: pk, username, email, first_name, last_name
+
+        Read-only fields: pk, email
+
+
+        Returns UserModel fields.'
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserDetails'
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateUserDetails
+      description: 'Reads and updates UserModel fields
+
+        Accepts GET, PUT, PATCH methods.
+
+
+        Default accepted fields: username, first_name, last_name
+
+        Default display fields: pk, username, email, first_name, last_name
+
+        Read-only fields: pk, email
+
+
+        Returns UserModel fields.'
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserDetails'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/UserDetails'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/UserDetails'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserDetails'
+          description: ''
+      tags:
+      - api
+    patch:
+      operationId: partialUpdateUserDetails
+      description: 'Reads and updates UserModel fields
+
+        Accepts GET, PUT, PATCH methods.
+
+
+        Default accepted fields: username, first_name, last_name
+
+        Default display fields: pk, username, email, first_name, last_name
+
+        Read-only fields: pk, email
+
+
+        Returns UserModel fields.'
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserDetails'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/UserDetails'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/UserDetails'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserDetails'
+          description: ''
+      tags:
+      - api
+  /notams/api/notams/:
+    get:
+      operationId: listNotams
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Notams'
+          description: ''
+      tags:
+      - notams
+    post:
+      operationId: createNotams
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Notams'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Notams'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Notams'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Notams'
+          description: ''
+      tags:
+      - notams
+  /notams/api/notams/{id}/:
+    get:
+      operationId: retrieveNotams
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Notam.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Notams'
+          description: ''
+      tags:
+      - notams
+    put:
+      operationId: updateNotams
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Notam.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Notams'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Notams'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Notams'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Notams'
+          description: ''
+      tags:
+      - notams
+    patch:
+      operationId: partialUpdateNotams
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Notam.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Notams'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Notams'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Notams'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Notams'
+          description: ''
+      tags:
+      - notams
+    delete:
+      operationId: destroyNotams
+      description: ''
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: A unique integer value identifying this Notam.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+      tags:
+      - notams
+  /api/rest-auth/password/reset/:
+    post:
+      operationId: createPasswordReset
+      description: 'Calls Django Auth PasswordResetForm save method.
+
+
+        Accepts the following POST parameters: email
+
+        Returns the success/fail message.'
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PasswordReset'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PasswordReset'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PasswordReset'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PasswordReset'
+          description: ''
+      tags:
+      - api
+  /api/rest-auth/password/reset/confirm/:
+    post:
+      operationId: createPasswordResetConfirm
+      description: "Password reset e-mail link is confirmed, therefore\nthis resets\
+        \ the user's password.\n\nAccepts the following POST parameters: token, uid,\n\
+        \    new_password1, new_password2\nReturns the success/fail message."
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PasswordResetConfirm'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PasswordResetConfirm'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PasswordResetConfirm'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PasswordResetConfirm'
+          description: ''
+      tags:
+      - api
+  /api/rest-auth/login/:
+    post:
+      operationId: createLogin
+      description: 'Check the credentials and return the REST Token
+
+        if the credentials are valid and authenticated.
+
+        Calls Django Auth login method to register User ID
+
+        in Django session framework
+
+
+        Accept the following POST parameters: username, password
+
+        Return the REST Framework Token Object''s key.'
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Login'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Login'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Login'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Login'
+          description: ''
+      tags:
+      - api
+  /api/rest-auth/password/change/:
+    post:
+      operationId: createPasswordChange
+      description: 'Calls Django Auth SetPasswordForm save method.
+
+
+        Accepts the following POST parameters: new_password1, new_password2
+
+        Returns the success/fail message.'
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PasswordChange'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PasswordChange'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PasswordChange'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PasswordChange'
+          description: ''
+      tags:
+      - api
+  /api/rest-auth/registration/:
+    post:
+      operationId: createRegister
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Register'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Register'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Register'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Register'
+          description: ''
+      tags:
+      - api
+  /api/rest-auth/registration/verify-email/:
+    post:
+      operationId: createVerifyEmail
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/VerifyEmail'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/VerifyEmail'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/VerifyEmail'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VerifyEmail'
+          description: ''
+      tags:
+      - api
+components:
+  schemas:
+    Aereo:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        aereo:
+          type: string
+          maxLength: 50
+        nome:
+          type: string
+          nullable: true
+          maxLength: 50
+      required:
+      - aereo
+    Pilota:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        uicd:
+          type: string
+          nullable: true
+          maxLength: 250
+    Decollo:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        aeroporto:
+          type: string
+          maxLength: 100
+        ora:
+          type: string
+          readOnly: true
+          nullable: true
+        data_reale:
+          type: string
+          format: date
+          readOnly: true
+      required:
+      - aeroporto
+    Atterraggio:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        aeroporto:
+          type: string
+          maxLength: 100
+        ora:
+          type: string
+          readOnly: true
+          nullable: true
+        data_reale:
+          type: string
+          format: date
+          readOnly: true
+      required:
+      - aeroporto
+    Volo:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        durata:
+          type: number
+          nullable: true
+        is_missione:
+          type: boolean
+        is_addestramento:
+          type: boolean
+        is_vololibero:
+          type: boolean
+        data_reale:
+          type: string
+          format: date
+          readOnly: true
+        commento_pubblico:
+          type: string
+          nullable: true
+        commento_privato:
+          type: string
+          nullable: true
+        decollo:
+          type: integer
+        atterraggio:
+          type: integer
+          nullable: true
+        aereo:
+          type: integer
+        istruttore:
+          type: integer
+          nullable: true
+        pilota:
+          type: integer
+      required:
+      - decollo
+      - aereo
+      - pilota
+    UserDetails:
+      type: object
+      properties:
+        pk:
+          type: integer
+          readOnly: true
+        username:
+          type: string
+          description: Obbligatorio. 150 caratteri o meno.Solo lettere, cifre e @/./+/-/_
+          pattern: ^[\w.@+-]+\z
+          maxLength: 150
+        email:
+          type: string
+          format: email
+          readOnly: true
+        first_name:
+          type: string
+          maxLength: 150
+        last_name:
+          type: string
+          maxLength: 150
+      required:
+      - username
+    Notams:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        titolo:
+          type: string
+          maxLength: 250
+        origine:
+          type: string
+          maxLength: 250
+        testo:
+          type: string
+        visibile:
+          type: boolean
+        data_creazione:
+          type: string
+          format: date-time
+          readOnly: true
+        data_update:
+          type: string
+          format: date-time
+          readOnly: true
+      required:
+      - titolo
+      - origine
+      - testo
+    PasswordReset:
+      type: object
+      properties:
+        email:
+          type: string
+          format: email
+      required:
+      - email
+    PasswordResetConfirm:
+      type: object
+      properties:
+        new_password1:
+          type: string
+          maxLength: 128
+        new_password2:
+          type: string
+          maxLength: 128
+        uid:
+          type: string
+        token:
+          type: string
+      required:
+      - new_password1
+      - new_password2
+      - uid
+      - token
+    Login:
+      type: object
+      properties:
+        username:
+          type: string
+        email:
+          type: string
+          format: email
+        password:
+          type: string
+      required:
+      - password
+    PasswordChange:
+      type: object
+      properties:
+        new_password1:
+          type: string
+          maxLength: 128
+        new_password2:
+          type: string
+          maxLength: 128
+      required:
+      - new_password1
+      - new_password2
+    Register:
+      type: object
+      properties:
+        username:
+          type: string
+          maxLength: 150
+          minLength: 1
+        email:
+          type: string
+          format: email
+        password1:
+          type: string
+          writeOnly: true
+        password2:
+          type: string
+          writeOnly: true
+      required:
+      - username
+      - email
+      - password1
+      - password2
+    VerifyEmail:
+      type: object
+      properties:
+        key:
+          type: string
+      required:
+      - key
